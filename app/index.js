@@ -8,6 +8,7 @@ const app = express() // Initialise mon serveur Express / app est l’objet prin
 app.use(cors()) // Active CORS pour toutes les routes / permet au front React de consommer l’API
 const port = 3000 // Définit le port du serveur backend
 
+
 app.use(router) // Branche mon routeur Express sur l’application / toutes les routes définies dans ./routes deviennent accessibles (exemple : router.get('/user/:id') accessible via : http://localhost:3000/user/12)
 
 app.listen(port, () => console.log(`Magic happens on port ${port}`)) // Lance le serveur Express / Écoute sur le port 3000
