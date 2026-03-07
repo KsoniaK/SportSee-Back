@@ -1,5 +1,5 @@
 const express = require('express')
-const idx = require('idx') // utilitaire pour accéder en toute sécurité à des propriétés imbriquées dans un objet / ci utilisé pour récupérer req.params.id sans générer d’erreur si req ou params n’existent pas
+const idx = require('idx') // utilitaire pour accéder en toute sécurité à des propriétés imbriquées dans un objet / ici utilisé pour récupérer req.params.id sans générer d’erreur si req ou params n’existent pas
 
 const router = express.Router() // Crée un routeur Express indépendant / Permet de regrouper toutes les routes liées aux utilisateurs / Ensuite, il est utilisé dans server.js avec : app.use(router)
 

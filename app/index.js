@@ -1,5 +1,5 @@
 const express = require('express') // Importe Express, un framework Node.js / Sert à créer une API HTTP (backend) / Gère : routes (/user/12), requêtes (GET), réponses (res.json())
-const cors = require('cors') // Autorise ton front React (localhost:3001 par ex.) à appeler ton back (localhost:3000)
+const cors = require('cors') // Autorise le front React (localhost:3001 par ex.) à appeler le back (localhost:3000)
 
 const router = require('./routes') // Importe un routeur Express / Contient toutes les routes de mon API
 
