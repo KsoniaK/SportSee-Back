@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/logo-3.png" alt="Logo SportSee" width="100">
+  <img src="assets/logo-3.png" alt="Logo SportSee" width="100">
 </p>
 
 # Getting Started with Vite
