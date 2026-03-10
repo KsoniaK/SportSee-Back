@@ -27,7 +27,7 @@ const getUserPerformance = id => USER_PERFORMANCE
     .filter(userPerformance => userPerformance.userId === id)
     .shift()
 
-// Rend toutes ces fonctions disponibles dans d’autres fichiers pour pouvoir les utiliser comme un mini service de récupération de données.
+// module.exports rend toutes ces fonctions disponibles dans d’autres fichiers pour pouvoir les utiliser comme un mini service de récupération de données.
 module.exports = {
     getUserById,
     getUserActivityById,
