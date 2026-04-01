@@ -7,7 +7,7 @@
     "start": "node app/server.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
+    "cors": "^2.8.6",
     "express": "^4.17.1",
     "idx": "^2.5.6"
   },

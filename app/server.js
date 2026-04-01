@@ -11,10 +11,12 @@ const router = require('./routes')
 const app = express() 
 
 // Active CORS pour toutes les routes / permet au front React de consommer l’API
-app.use(cors()) 
+app.use(cors({
+  origin: 'https://ksoniak.github.io'
+}))
 
 // Définit le port du serveur backend
-const port = 3000
+const port = process.env.PORT || 3000
 
 // Branche mon routeur Express sur l’application / toutes les routes définies dans ./routes deviennent accessibles (exemple : router.get('/user/:id') accessible via : http://localhost:3000/user/12)
 app.use(router)
