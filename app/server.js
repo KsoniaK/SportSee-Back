@@ -14,7 +14,17 @@ const app = express()
 // app.use(cors({
 //   origin: 'https://ksoniak.github.io'
 // }))
-app.use(cors())
+app.use(cors());
+
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:3001',
+    'https://ksoniak.github.io'
+  ],
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 
 // Définit le port du serveur backend
 const port = process.env.PORT || 3000
