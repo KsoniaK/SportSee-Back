@@ -20,7 +20,7 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:3001',
-    'https://ksoniak.github.io'
+    'https://ksoniak.github.io/SportSee-Front/'
   ],
   methods: ['GET', 'POST'],
   credentials: true
